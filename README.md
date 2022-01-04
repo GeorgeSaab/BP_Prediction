@@ -1,4 +1,5 @@
-# BloodPressure-Prediction
+# Predicting Blood Pressure From PPG and ECG
+## Authors: George Saab, Mark Kirichev, Amy MiHyun Jang
 ## Abstract
 
 Arterial blood pressure (ABP) is a necessary biomedical signal that is used to gauge patient risk for various cardiovascular events. However, due to difficulties obtaining ABP measurements in certain patient demographics, electrocardiogram (ECG) and photoplethysmography (PPG) signals have been collected in lieu of ABP data. Our paper identifies a useful LSTM architecture that can predict ABP measurements from ECG and PPG patient data and demonstrates how generative adversarial networks (GANs) can be utilized to augment ABP training dataset for future models.
