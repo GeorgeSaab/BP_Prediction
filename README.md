@@ -81,14 +81,23 @@ Predicting the ABP of obese patients will greatly aid clinical staff in accurate
 ## References
 
 [1]	W. S. Aronow, “Measurement of blood pressure,” Ann. Transl. Med., vol. 5, no. 3, pp. 49–49, Feb. 2017, doi: 10.21037/atm.2017.01.09.
+
 [2]      	N. C. for B. Information, U. S. N. L. of M. 8600 R. Pike, B. MD, and 20894 Usa, What is blood pressure and how is it measured? Institute for Quality and Efficiency in Health Care (IQWiG), 2019. Accessed: Dec. 14, 2021. [Online]. Available: https://www.ncbi.nlm.nih.gov/books/NBK279251/
+
 [3]      	G. Ogedegbe and T. Pickering, “Principles and techniques of blood pressure measurement,” Cardiol. Clin., vol. 28, no. 4, pp. 571–586, Nov. 2010, doi: 10.1016/j.ccl.2010.07.006.
+
 [4]      	P. Palatini, “Blood pressure measurement in the obese: still a challenging problem,” E-J. Cardiol. Pract., vol. 16, no. 21, Aug. 2018, Accessed: Dec. 14, 2021. [Online]. Available: https://www.escardio.org/Journals/E-Journal-of-Cardiology-Practice/Volume-16/Blood-pressure-measurement-in-the-obese-still-a-challenging-problem
+
 [5]      	Y. Sattar and L. Chhabra, “Electrocardiogram,” in StatPearls, Treasure Island (FL): StatPearls Publishing, 2021. Accessed: Dec. 14, 2021. [Online]. Available: http://www.ncbi.nlm.nih.gov/books/NBK549803/
+
 [6]      	I. Eisenstein, J. Edelstein, R. Sarma, M. Sanmarco, and R. H. Selvester, “The electrocardiogram in obesity.,” J. Electrocardiol., vol. 15, no. 2, pp. 115–118, Apr. 1982, doi: 10.1016/s0022-0736(82)80003-4.
+
 [7]      	D. Castaneda, A. Esparza, M. Ghamari, C. Soltanpur, and H. Nazeran, “A review on wearable photoplethysmography sensors and their potential future applications in health care,” Int. J. Biosens. Bioelectron., vol. 4, no. 4, pp. 195–202, 2018, doi: 10.15406/ijbsbe.2018.04.00125.
+
 [8]      	J. Allen, “Photoplethysmography and its application in clinical physiological measurement.,” Physiol. Meas., vol. 28, no. 3, pp. R1-39, Mar. 2007, doi: 10.1088/0967-3334/28/3/R01.
+
 [9]	Y. Liang, Z. Chen, R. Ward, and M. Elgendi, “Hypertension Assessment via ECG and PPG Signals: An Evaluation Using MIMIC Database,” Diagn. Basel Switz., vol. 8, no. 3, p. 65, Sep. 2018, doi: 10.3390/diagnostics8030065.
+
 [10]	A. Creswell, T. White, V. Dumoulin, K. Arulkumaran, B. Sengupta and A. A. Bharath, "Generative Adversarial Networks: An Overview," in IEEE Signal Processing Magazine, vol. 35, no. 1, pp. 53-65, Jan. 2018, doi: 10.1109/MSP.2017.2765202.
 
 ## Data
