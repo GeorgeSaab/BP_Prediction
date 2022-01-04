@@ -100,6 +100,6 @@ Predicting the ABP of obese patients will greatly aid clinical staff in accurate
 
 [10]	A. Creswell, T. White, V. Dumoulin, K. Arulkumaran, B. Sengupta and A. A. Bharath, "Generative Adversarial Networks: An Overview," in IEEE Signal Processing Magazine, vol. 35, no. 1, pp. 53-65, Jan. 2018, doi: 10.1109/MSP.2017.2765202.
 
-## Data
+## Dataset
 
 https://www.kaggle.com/mkachuee/BloodPressureDataset
