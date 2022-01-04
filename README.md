@@ -24,7 +24,7 @@ To identify which architecture would be best suited for ABP prediction, multiple
 
 The first model was a many-to-many LSTM. The architecture of the LSTM can be found in Figure 1. Different hyperparameter values {128, 256, 512} for the number of LSTM units were tested. The ABP signal was normalized to the range [0, 1].
 
-![e](images/LSTM_Architecture.png)
+![e](images/LSTM_Architecture.PNG)
 
 The LSTM model is favorable due to its ability to take in temporal data. PPG, ABP, and ECG signals all have a crucial temporal component.
 
@@ -33,15 +33,15 @@ The LSTM model is favorable due to its ability to take in temporal data. PPG, AB
 An LSTM layer was combined with a dense layer with a linear activation as seen in Figure 2. This modification in the architecture was added to evaluate if the model would predict better ABP signals if it sees the entire input before it starts to output values. Different hyperparameter values of the number of LSTM units were changed to determine the best hyperparameter for the model. The two hyperparameter values that were tested were 256 and 512 LSTM units for the LSTM+Dense model. The ABP signal was normalized to the range [0, 1].
 
 
-![e](images/LSTM_Dense_Architecture.png)
+![e](images/LSTM_Dense_Architecture.PNG)
 
 ### Dense
 
 A simple deep neural network was evaluated as well. The deep neural network architectures can be seen in Figure 3a and 3b. Both models use dense layers with higher dimensionalities. This allows the model to act as an autoencoder and denoise the input data. Additionally, the decoder/encoder structure of the model in Figure 3a was designed to act as a transcoder between the different biomedical signals.
 
-![e](images/Dense_Model_1.png)
+![e](images/Dense_Model_1.PNG)
 
-![e](images/Dense_Model_2.png)
+![e](images/Dense_Model_2.PNG)
 
 ### GAN
 
@@ -51,7 +51,7 @@ The implementation of a GAN in our analysis of Kaggle’s Cuff-Less Blood Pressu
 
 At the preprocessing level, the data was normalized by creating the following map:
 
-![e](images/GAN_equation.png)
+![e](images/GAN_equation.PNG)
 where x and y are min(concat(ppg, ecg) and max(concat(ppg, ecg) respectively. The map places each value from the dataset in the range [-1, 1].
 
 The initial GAN architecture was trained with      10 000 epochs in order to determine the most efficient number of epochs. The generator model was constructed by adding 3 consecutive sets of Dense layer, Leaky ReLu activation, and a Batch Normalization. As we analyze Figure 7 on the loss functions of the training, the GAN performs the best when trained with approximately 2900 epochs. The clustering of the discriminator and generator signals shows us that the training between 2700 and 3100 epochs proves to be the most efficient having significant overlap as well as some of the lowest values for the loss. Furthermore, we can infer that this is actually true by analyzing the fluctuations of the loss values which tend to rise up to 13 times for the discriminator after rising to 6000 epochs. The training time of the model is also important to note, as seen in Figure 8. The training time for the neural network tends to stagnate for the time period when the discriminator’s loss lowers and converges towards the generator’s. This trend is broken after a certain amount of time has passed and, more precisely, around epoch 3100. This speaks that the discriminator starts to overfit making it ineffective. Analyzing the time graph confirms this as considerably more time is needed to train the network after epoch 3130.
@@ -62,13 +62,13 @@ The previous observations prompted the retraining of the network using 2900 epoc
 
 Using the models highlighted in the Materials and Methods section above, we are able to predict ABP signals from ECG and PPG at varying capacities. An example of the prediction outputs from the LSTM-only architectures can be seen in Figure 4. An example of the prediction outputs from the LSTM+Dense models can be found in Figure 5. An example of the prediction outputs from the Dense-only model can be found in Figure 6. The x-axis for all of these figures represent time. The y-axis for all of the figures represents blood pressure after being normalized to [0, 1].
 
-![e](images/Model_Predictions.png)
+![e](images/Model_Predictions.PNG)
 
 As we can see on Figure 10, the results from the GAN trained with 2900 epochs are in much closer proximity than those from the GAN trained with 10000 epochs, ranging from 0.02 to 0.52 as opposed to (-0.8)  (1.0). Additionally, Figure 9 shows us the predictions from the GAN and we can recognize that the general trends are preserved, their only difference with the original artificially created signal being spatially translated to the right.
 
-![e](images/GAN_Model.png)
+![e](images/GAN_Model.PNG)
 
-![e](images/MSE_GAN_Loss.png)
+![e](images/MSE_GAN_Loss.PNG)
 
 ## Conclusion
 
